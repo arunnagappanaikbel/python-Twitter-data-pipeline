@@ -1,0 +1,10 @@
+twitter:
+  query: "#AI OR #DataScience -is:retweet lang:en"
+  max_results: 50
+  expansions: "author_id"
+  tweet_fields: "created_at,text,public_metrics,lang"
+  user_fields: "username,public_metrics,verified"
+
+output:
+  raw_path: "data/raw/tweets_raw.json"
+  processed_path: "data/processed/tweets_cleaned.csv"
